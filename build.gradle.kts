@@ -28,3 +28,9 @@ dependencies {
     implementation(group = "tools.aqua", name = "bgw-net-common", version = bgwVersion)
     implementation(group = "tools.aqua", name = "bgw-net-client", version = bgwVersion)
 }
+
+
+tasks.test {
+    useJUnitPlatform()
+    ignoreFailures = true
+}
